@@ -9,7 +9,7 @@ export default function Landing() {
 
   useEffect(() => {
     const detectDevice = () => {
-      const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+      const userAgent = navigator.userAgent || navigator.vendor || (window as unknown as { opera?: string }).opera;
       
       // Android detection
       if (/android/i.test(userAgent)) {
@@ -19,7 +19,7 @@ export default function Landing() {
       }
       
       // iOS detection (iPhone, iPad, iPod)
-      if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+      if (/iPad|iPhone|iPod/.test(userAgent) && !(window as unknown as { MSStream?: unknown }).MSStream) {
         setDeviceType('ios');
         window.location.href = IOS_STORE_URL;
         return;
