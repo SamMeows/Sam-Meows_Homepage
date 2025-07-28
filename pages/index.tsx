@@ -254,7 +254,7 @@ export default function Home({ recordMap }: { recordMap: ExtendedRecordMap }) {
           className="hidden md:block"
         />
         <button
-          onClick={() => window.open("https://ritty.me", "_blank")}
+          onClick={() => window.open("https://www.sam-meows.com/landing", "_blank")}
           className="flex justify-center items-center gap-[10px] bg-[#6B65FF] md:w-[270px] w-[196px] md:h-[58px] h-[46px] rounded-full text-white font-semibold border-[#ffffff9d] border-[2px] cursor-pointer hover:shadow-[0_0_20px_#6B65FF80] transition-all duration-300 text-[14px] md:text-[20px]"
         >
           <Image
