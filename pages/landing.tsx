@@ -9,7 +9,7 @@ export default function Landing() {
 
   useEffect(() => {
     const detectDevice = () => {
-      const userAgent = navigator.userAgent || navigator.vendor || (window as unknown as { opera?: string }).opera;
+      const userAgent = navigator.userAgent || navigator.vendor || (window as unknown as { opera?: string }).opera || '';
       
       // Android detection
       if (/android/i.test(userAgent)) {
