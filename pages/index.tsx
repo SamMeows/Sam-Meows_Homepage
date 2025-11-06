@@ -1,11 +1,7 @@
 import Image from "next/image";
 import RittyMiniIcon from "@/public/ritty-mini-logo.svg";
-import BottomHeroGradTextPC from "@/public/bottom-hero-text-grad_PC.svg";
-import BottomHeroGradText from "@/public/bottom-hero-text-grad.svg";
 import InstagramIcon from "@/public/contact-icons/instagram.svg";
-import DiscordIcon from "@/public/contact-icons/discord.svg";
 import LinkedInIcon from "@/public/contact-icons/linkedin.svg";
-import KakaoTalkIcon from "@/public/contact-icons/kakaotalk.svg";
 import MailIcon from "@/public/contact-icons/mail.svg";
 import MailMiniIcon from "@/public/link-icons/mail-icon.svg";
 import LinkedInMiniIcon from "@/public/link-icons/linkedin-icon.svg";
@@ -14,7 +10,6 @@ import { useState, useEffect } from "react";
 import { Link, PERSONAL_INFO_LINKS } from "@/constants/personal-info";
 import { type ExtendedRecordMap } from "notion-types";
 import { NotionAPI } from "notion-client";
-// import { NotionPage } from "@/components/NotionPage";
 
 // sm: 핸드폰, md: 태블릿, xl: 데스크탑
 
@@ -23,7 +18,6 @@ const ROOT_NOTION_ID = process.env.NEXT_PUBLIC_NOTION_PAGE_ID || "";
 type Section = "" | "about us" | "service" | "team" | "contact";
 
 const LineBreakMobileOnly = () => <br className="block sm:hidden" />;
-const LineBreakDesktopOnly = () => <br className="hidden sm:block" />;
 
 const LinkContainer = ({ linkInfo }: { linkInfo: Link }) => {
   return (
@@ -54,14 +48,12 @@ export const getStaticProps = async () => {
   const recordMap = await notion.getPage(ROOT_NOTION_ID);
 
   return {
-    props: {
-      recordMap,
-    },
+    props: {},
     revalidate: 10,
   };
 };
 
-export default function Home({ recordMap }: { recordMap: ExtendedRecordMap }) {
+export default function Home() {
   const [selectedSection, setSelectedSection] = useState<Section>("");
 
   useEffect(() => {
