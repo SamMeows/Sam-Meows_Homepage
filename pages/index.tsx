@@ -8,12 +8,11 @@ import LinkedInMiniIcon from "@/public/link-icons/linkedin-icon.svg";
 import DisquietMiniIcon from "@/public/link-icons/disquiet-icon.svg";
 import { useState, useEffect } from "react";
 import { Link, PERSONAL_INFO_LINKS } from "@/constants/personal-info";
-import { type ExtendedRecordMap } from "notion-types";
-import { NotionAPI } from "notion-client";
+// import { NotionAPI } from "notion-client";
 
 // sm: 핸드폰, md: 태블릿, xl: 데스크탑
 
-const ROOT_NOTION_ID = process.env.NEXT_PUBLIC_NOTION_PAGE_ID || "";
+// const ROOT_NOTION_ID = process.env.NEXT_PUBLIC_NOTION_PAGE_ID || "";
 
 type Section = "" | "about us" | "service" | "team" | "contact";
 
@@ -42,16 +41,16 @@ const LinkContainer = ({ linkInfo }: { linkInfo: Link }) => {
   );
 };
 
-export const getStaticProps = async () => {
-  const notion = new NotionAPI();
-
-  const recordMap = await notion.getPage(ROOT_NOTION_ID);
-
-  return {
-    props: {},
-    revalidate: 10,
-  };
-};
+// export const getStaticProps = async () => {
+//   const notion = new NotionAPI();
+//
+//   const recordMap = await notion.getPage(ROOT_NOTION_ID);
+//
+//   return {
+//     props: {},
+//     revalidate: 10,
+//   };
+// };
 
 export default function Home() {
   const [selectedSection, setSelectedSection] = useState<Section>("");
