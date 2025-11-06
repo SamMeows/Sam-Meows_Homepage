@@ -57,22 +57,17 @@ export const PERSONAL_INFO_LINKS = {
       },
     ] as Link[],
   },
-  Kiyeon: {
+  Hyorin: {
     links: [
       {
         type: "LinkedIn",
-        label: "Kiyeon Kim",
-        url: "https://www.linkedin.com/in/kiyeon-kim/",
-      },
-      {
-        type: "Disquiet",
-        label: "kiyeon831",
-        url: "https://disquiet.io/@kyean831",
+        label: "Hyorin Lim",
+        url: "https://www.linkedin.com/in/hyorin01/",
       },
       {
         type: "Mail",
-        label: "arky02@sam-meows.com",
-        url: "mailto:arky02@sam-meows.com",
+        label: "linad@sam-meows.com",
+        url: "mailto:linad@sam-meows.com",
       },
     ] as Link[],
   },
