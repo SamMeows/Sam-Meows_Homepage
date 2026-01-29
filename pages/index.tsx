@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import RittyMiniIcon from "@/public/ritty-mini-logo.svg";
 import InstagramIcon from "@/public/contact-icons/instagram.svg";
 import LinkedInIcon from "@/public/contact-icons/linkedin.svg";
@@ -92,7 +93,38 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-white">
+    <>
+      <Head>
+        <title>삼냥이즈 SamMeows - 가상 친구와 함께 만드는 세상</title>
+        <meta name="description" content="삼냥이즈(SamMeows)는 가상 친구 리티(Ritty)를 만듭니다. 당신과 함께 대화하고, 성장하는 AI 가상 펫을 만나보세요. Digital beings cross the border into daily life." />
+        <meta name="keywords" content="삼냥이즈, SamMeows, 리티, Ritty, 가상 펫, 가상 친구, AI 펫, AI 친구, 버추얼 펫, virtual pet, AI companion, digital friend, 챗봇, AI 캐릭터" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sam-meows.com" />
+        <meta property="og:title" content="삼냥이즈 SamMeows - 가상 친구와 함께 만드는 세상" />
+        <meta property="og:description" content="삼냥이즈(SamMeows)는 가상 친구 리티(Ritty)를 만듭니다. 당신과 함께 대화하고, 성장하는 AI 가상 펫을 만나보세요." />
+        <meta property="og:image" content="https://sam-meows.com/og-image.png" />
+        <meta property="og:site_name" content="삼냥이즈 SamMeows" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta property="og:locale:alternate" content="en_US" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://sam-meows.com" />
+        <meta name="twitter:title" content="삼냥이즈 SamMeows - 가상 친구와 함께 만드는 세상" />
+        <meta name="twitter:description" content="삼냥이즈(SamMeows)는 가상 친구 리티(Ritty)를 만듭니다. 당신과 함께 대화하고, 성장하는 AI 가상 펫을 만나보세요." />
+        <meta name="twitter:image" content="https://sam-meows.com/og-image.png" />
+
+        {/* Additional SEO */}
+        <meta name="author" content="삼냥이즈 (SamMeows Inc.)" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="Korean" />
+        <link rel="canonical" href="https://sam-meows.com" />
+      </Head>
+      <main className="bg-white">
       {/* Top Navigation Bar */}
       <section className="fixed top-[30px] z-50 flex p-[8px] pl-[20px] font-semibold font-[#9AA2AE] text-[14px] bg-white rounded-full left-1/2 -translate-x-1/2 transition-colors duration-300 shadow-[0_0_20px_#ff616138]">
         <Image
@@ -528,6 +560,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </main>
+      </main>
+    </>
   );
 }

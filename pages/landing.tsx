@@ -37,8 +37,23 @@ export default function Landing() {
     return (
       <>
         <Head>
-          <title>Ritty 앱 다운로드</title>
-          <meta name="description" content="Ritty 앱을 다운로드하세요" />
+          <title>Ritty - Your Virtual Pet Companion | SamMeows</title>
+          <meta name="description" content="Download Ritty, your own virtual pet that chats, cares, and grows with you every day. Available on Android and iOS." />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="icon" href="/favicon.ico" />
+
+          {/* Open Graph */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://sam-meows.com/landing" />
+          <meta property="og:title" content="Ritty - Your Virtual Pet Companion | SamMeows" />
+          <meta property="og:description" content="Download Ritty, your own virtual pet that chats, cares, and grows with you every day. Available on Android and iOS." />
+          <meta property="og:image" content="https://sam-meows.com/og-image.png" />
+
+          {/* Twitter Card */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Ritty - Your Virtual Pet Companion | SamMeows" />
+          <meta name="twitter:description" content="Download Ritty, your own virtual pet that chats, cares, and grows with you every day. Available on Android and iOS." />
+          <meta name="twitter:image" content="https://sam-meows.com/og-image.png" />
         </Head>
         <div style={{
           display: 'flex',
@@ -58,8 +73,23 @@ export default function Landing() {
     return (
       <>
         <Head>
-          <title>Ritty 앱 다운로드</title>
-          <meta name="description" content="Ritty 앱을 다운로드하세요" />
+          <title>Ritty - Your Virtual Pet Companion | SamMeows</title>
+          <meta name="description" content="Download Ritty, your own virtual pet that chats, cares, and grows with you every day. Available on Android and iOS." />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="icon" href="/favicon.ico" />
+
+          {/* Open Graph */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://sam-meows.com/landing" />
+          <meta property="og:title" content="Ritty - Your Virtual Pet Companion | SamMeows" />
+          <meta property="og:description" content="Download Ritty, your own virtual pet that chats, cares, and grows with you every day. Available on Android and iOS." />
+          <meta property="og:image" content="https://sam-meows.com/og-image.png" />
+
+          {/* Twitter Card */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Ritty - Your Virtual Pet Companion | SamMeows" />
+          <meta name="twitter:description" content="Download Ritty, your own virtual pet that chats, cares, and grows with you every day. Available on Android and iOS." />
+          <meta name="twitter:image" content="https://sam-meows.com/og-image.png" />
         </Head>
         <div style={{
           display: 'flex',
