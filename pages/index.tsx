@@ -99,7 +99,9 @@ export default function Home() {
         <meta name="description" content="삼냥이즈(SamMeows)는 가상 친구 리티(Ritty)를 만듭니다. 당신과 함께 대화하고, 성장하는 AI 가상 펫을 만나보세요. Digital beings cross the border into daily life." />
         <meta name="keywords" content="삼냥이즈, SamMeows, 리티, Ritty, 가상 펫, 가상 친구, AI 펫, AI 친구, 버추얼 펫, virtual pet, AI companion, digital friend, 챗봇, AI 캐릭터" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
@@ -266,6 +268,9 @@ export default function Home() {
         <Image
           src={"/service-banner_PC.png"}
           alt="service banner"
+
+
+
           width={800}
           height={500}
           className="hidden md:block"
