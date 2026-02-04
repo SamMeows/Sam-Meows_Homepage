@@ -42,60 +42,6 @@ export default function HeroContent({ onScrollToSection }: HeroContentProps) {
 
   return (
     <div className="relative z-10 flex flex-col items-center text-center px-[20px] max-w-[900px]">
-      {/* Cat Paw Icon */}
-      <motion.div
-        className="mb-[30px] md:mb-[40px]"
-        initial={{ scale: 0, rotate: -180 }}
-        animate={{ scale: 1, rotate: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 200,
-          damping: 15,
-          delay: 0.1,
-        }}
-      >
-        <div className="relative">
-          <motion.div
-            className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full bg-gradient-to-br from-[#FF6161] to-[#FF52F9] flex items-center justify-center"
-            animate={{
-              boxShadow: [
-                "0 0 20px rgba(255, 97, 97, 0.3)",
-                "0 0 40px rgba(255, 97, 97, 0.6)",
-                "0 0 20px rgba(255, 97, 97, 0.3)",
-              ],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          >
-            <svg
-              className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] text-white"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 2c-1.66 0-3 1.34-3 3h6c0-1.66-1.34-3-3-3z" />
-            </svg>
-          </motion.div>
-          {/* Orbiting small star */}
-          <motion.div
-            className="absolute top-0 left-0 w-full h-full"
-            animate={{ rotate: 360 }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          >
-            <div
-              className="w-[8px] h-[8px] bg-[#FFBC70] rounded-full"
-              style={{ transform: "translateX(50px)" }}
-            />
-          </motion.div>
-        </div>
-      </motion.div>
-
       {/* Title */}
       <motion.h1
         className="text-white text-[40px] sm:text-[56px] md:text-[72px] font-bold leading-[110%] mb-[10px]"
@@ -121,14 +67,14 @@ export default function HeroContent({ onScrollToSection }: HeroContentProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1 }}
       >
-        일방적으로 소비하는 컨텐츠를 넘어,
+        단순히 소비하는 콘텐츠를 넘어,
         <br className="hidden md:block" />
-        양방향 소통이 가능한{" "}
+        나와 소통하며 교감하는{" "}
         <span className="text-[#FF7B7B] font-medium">가상의 존재(Being)</span>를
         만듭니다.
         <br />
         그리고 함께 뛰어놀 수 있는{" "}
-        <span className="text-[#A78BFA] font-medium">놀이터(Place)</span>를 만듭니다.
+        <span className="text-[#A78BFA] font-medium">세계(World)</span>를 만듭니다.
       </motion.p>
 
       {/* CTA Button */}

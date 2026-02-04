@@ -18,6 +18,13 @@ export default function Home() {
       const sections = document.querySelectorAll("section[id]");
       const scrollPosition = window.scrollY + window.innerHeight / 2;
 
+      // Check if we're in the Hero section (before the first named section)
+      const firstSection = sections[0] as HTMLElement | undefined;
+      if (firstSection && scrollPosition < firstSection.offsetTop) {
+        setSelectedSection("");
+        return;
+      }
+
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i] as HTMLElement;
         const sectionTop = section.offsetTop;
