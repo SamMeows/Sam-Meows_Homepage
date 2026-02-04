@@ -52,9 +52,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>삼냥이즈 SamMeows - 가상 친구와 함께 만드는 세상</title>
-        <meta name="description" content="삼냥이즈(SamMeows)는 가상 친구 리티(Ritty)를 만듭니다. 당신과 함께 대화하고, 성장하는 AI 가상 펫을 만나보세요. Digital beings cross the border into daily life." />
-        <meta name="keywords" content="삼냥이즈, SamMeows, 리티, Ritty, 가상 펫, 가상 친구, AI 펫, AI 친구, 버추얼 펫, virtual pet, AI companion, digital friend, 챗봇, AI 캐릭터" />
+        <title>삼냥이즈 SamMeows - Build Worlds With Virtual Friends</title>
+        <meta name="description" content="삼냥이즈(SamMeows)는 단순히 소비하는 콘텐츠를 넘어, 나와 소통하며 교감하는 가상의 존재(Being)를 만듭니다. 그리고 함께 뛰어놀 수 있는 세계(World)를 만듭니다." />
+        <meta name="keywords" content="삼냥이즈, SamMeows, 리티, Ritty, 가상 친구, 가상 존재, Virtual Being, Virtual World, AI 친구, 버추얼 펫, virtual pet, AI companion, digital friend, 가상 세계" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="shortcut icon" type="image/png" href="/favicon.png" />
@@ -63,8 +63,8 @@ export default function Home() {
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sam-meows.com" />
-        <meta property="og:title" content="삼냥이즈 SamMeows - 가상 친구와 함께 만드는 세상" />
-        <meta property="og:description" content="삼냥이즈(SamMeows)는 가상 친구 리티(Ritty)를 만듭니다. 당신과 함께 대화하고, 성장하는 AI 가상 펫을 만나보세요." />
+        <meta property="og:title" content="삼냥이즈 SamMeows - Build Worlds With Virtual Friends" />
+        <meta property="og:description" content="삼냥이즈(SamMeows)는 단순히 소비하는 콘텐츠를 넘어, 나와 소통하며 교감하는 가상의 존재(Being)를 만듭니다. 그리고 함께 뛰어놀 수 있는 세계(World)를 만듭니다." />
         <meta property="og:image" content="https://sam-meows.com/og-image.png" />
         <meta property="og:site_name" content="삼냥이즈 SamMeows" />
         <meta property="og:locale" content="ko_KR" />
@@ -73,8 +73,8 @@ export default function Home() {
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://sam-meows.com" />
-        <meta name="twitter:title" content="삼냥이즈 SamMeows - 가상 친구와 함께 만드는 세상" />
-        <meta name="twitter:description" content="삼냥이즈(SamMeows)는 가상 친구 리티(Ritty)를 만듭니다. 당신과 함께 대화하고, 성장하는 AI 가상 펫을 만나보세요." />
+        <meta name="twitter:title" content="삼냥이즈 SamMeows - Build Worlds With Virtual Friends" />
+        <meta name="twitter:description" content="삼냥이즈(SamMeows)는 단순히 소비하는 콘텐츠를 넘어, 나와 소통하며 교감하는 가상의 존재(Being)를 만듭니다. 그리고 함께 뛰어놀 수 있는 세계(World)를 만듭니다." />
         <meta name="twitter:image" content="https://sam-meows.com/og-image.png" />
 
         {/* Additional SEO */}
