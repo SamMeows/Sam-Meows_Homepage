@@ -3,6 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Animation Variables */
+  --animation-fast: 200ms;
+  --animation-normal: 300ms;
+  --animation-slow: 500ms;
+
+  /* Colors */
+  --color-primary: #FF6161;
+  --color-secondary: #716BF8;
+  --color-accent: #FF52F9;
+  --color-text: #3F404D;
+  --color-text-muted: #9AA2AE;
 }
 
 @theme inline {
@@ -53,4 +65,45 @@ img {
     margin: 0 !important;
     padding: 0 10px !important;
   }
+}
+
+/* Gradient Animation for Hero Title */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(255, 97, 97, 0.3);
+  color: inherit;
 }
