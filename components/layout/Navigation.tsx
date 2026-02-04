@@ -12,10 +12,10 @@ interface NavigationProps {
 }
 
 const navItems: { id: Section; label: string; width: string }[] = [
-  { id: "about", label: "About", width: "70px" },
-  { id: "product", label: "Product", width: "82px" },
-  { id: "news", label: "News", width: "70px" },
-  { id: "contact", label: "Contact", width: "82px" },
+  { id: "about", label: "About", width: "85px" },
+  { id: "product", label: "Product", width: "95px" },
+  { id: "news", label: "News", width: "80px" },
+  { id: "contact", label: "Contact", width: "95px" },
 ];
 
 export default function Navigation({
@@ -46,7 +46,7 @@ export default function Navigation({
 
       {/* Navigation Bar */}
       <motion.nav
-        className="fixed top-[30px] z-50 flex p-[8px] pl-[20px] font-semibold text-[14px] bg-white rounded-full left-1/2 -translate-x-1/2 transition-colors duration-300"
+        className="fixed top-[30px] z-50 flex p-[8px] pl-[24px] pr-[10px] font-semibold text-[14px] bg-white rounded-full left-1/2 -translate-x-1/2 transition-colors duration-300"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.5 }}

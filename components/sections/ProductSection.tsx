@@ -141,7 +141,7 @@ export default function ProductSection() {
             variant="primary"
             onClick={() => window.open("https://ritty.me", "_blank")}
           >
-            ritty.me &gt;
+            공식 홈페이지 &gt;
           </ProductButton>
           <ProductButton
             variant="secondary"

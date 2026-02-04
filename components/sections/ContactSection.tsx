@@ -5,16 +5,18 @@ import Image from "next/image";
 import FadeInView from "@/components/ui/FadeInView";
 import LinkedInIcon from "@/public/contact-icons/linkedin.svg";
 import MailIcon from "@/public/contact-icons/mail.svg";
+import InstagramIcon from "@/public/contact-icons/instagram.svg";
+import DiscordIcon from "@/public/contact-icons/discord.svg";
+import KakaoTalkIcon from "@/public/contact-icons/kakaotalk.svg";
 
 interface SocialIconProps {
   icon: string;
   alt: string;
   onClick: () => void;
   delay?: number;
-  hoverColor?: string;
 }
 
-function SocialIcon({ icon, alt, onClick, delay = 0, hoverColor }: SocialIconProps) {
+function SocialIcon({ icon, alt, onClick, delay = 0 }: SocialIconProps) {
   return (
     <motion.div
       className="cursor-pointer"
@@ -68,8 +70,16 @@ export default function ContactSection() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-[40px]">
+      <div className="relative z-10 flex flex-col items-center gap-[30px] md:gap-[40px]">
+        {/* Label */}
         <FadeInView>
+          <span className="text-[#9AA2AE] font-medium text-[15px] md:text-[18px]">
+            Get In Touch
+          </span>
+        </FadeInView>
+
+        {/* Title */}
+        <FadeInView delay={0.1}>
           <motion.h1
             className="text-[#FF6161] md:text-[45px] text-[30px] text-center font-semibold leading-[120%]"
             animate={{
@@ -89,35 +99,70 @@ export default function ContactSection() {
           </motion.h1>
         </FadeInView>
 
-        <div className="flex flex-col gap-[20px] items-center">
-          <div className="flex gap-[12px]">
-            <SocialIcon
-              icon={MailIcon}
-              alt="mail icon"
-              onClick={() => window.open("mailto:contact@sam-meows.com", "_blank")}
-              delay={0.2}
-            />
-            <SocialIcon
-              icon={LinkedInIcon}
-              alt="linkedin icon"
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/company/104854511/",
-                  "_blank"
-                )
-              }
-              delay={0.3}
-            />
-          </div>
-          <FadeInView delay={0.4}>
-            <motion.span
-              className="text-[#3F404D] text-[16px]"
-              whileHover={{ scale: 1.05 }}
-            >
-              contact@sam-meows.com
-            </motion.span>
-          </FadeInView>
+        {/* Description */}
+        <FadeInView delay={0.2}>
+          <p className="text-[#3F404D] text-[15px] md:text-[18px] text-center max-w-[400px] leading-[160%] whitespace-nowrap">
+            협업, 제안, 또는 궁금한 점이 있으시면 언제든 연락주세요.
+          </p>
+        </FadeInView>
+
+        {/* Social Icons */}
+        <div className="flex gap-[12px] md:gap-[16px]">
+          <SocialIcon
+            icon={MailIcon}
+            alt="mail icon"
+            onClick={() => window.open("mailto:contact@sam-meows.com", "_blank")}
+            delay={0.3}
+          />
+          <SocialIcon
+            icon={LinkedInIcon}
+            alt="linkedin icon"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/company/104854511/",
+                "_blank"
+              )
+            }
+            delay={0.35}
+          />
+          <SocialIcon
+            icon={InstagramIcon}
+            alt="instagram icon"
+            onClick={() =>
+              window.open("https://www.instagram.com/ritty_makers/", "_blank")
+            }
+            delay={0.4}
+          />
+          <SocialIcon
+            icon={DiscordIcon}
+            alt="discord icon"
+            onClick={() =>
+              window.open("https://discord.com/invite/wghaFYCkCV", "_blank")
+            }
+            delay={0.45}
+          />
+
         </div>
+
+        {/* CTA Button */}
+        <FadeInView delay={0.55}>
+          <motion.button
+            onClick={() => window.open("mailto:contact@sam-meows.com", "_blank")}
+            className="flex justify-center items-center md:w-[200px] w-[160px] md:h-[58px] h-[48px] rounded-full font-semibold text-white cursor-pointer text-[14px] md:text-[18px]"
+            style={{
+              background: "linear-gradient(90deg, #FF6161 0%, #FF52F9 100%)",
+            }}
+            whileHover={{
+              scale: 1.05,
+              y: -3,
+              boxShadow: "0 0 25px rgba(255, 97, 97, 0.5)",
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            문의하기
+          </motion.button>
+        </FadeInView>
+
       </div>
     </section>
   );

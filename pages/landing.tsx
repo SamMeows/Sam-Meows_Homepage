@@ -121,7 +121,7 @@ export default function Landing() {
               borderRadius: '8px',
               boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
             }}>
-              <strong>안드로이드 다운받기:</strong>
+              <strong>Android 다운로드:</strong>
               <br />
               <a 
                 href={ANDROID_STORE_URL}
@@ -144,7 +144,7 @@ export default function Landing() {
               borderRadius: '8px',
               boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
             }}>
-              <strong>아이폰 다운받기:</strong>
+              <strong>iOS 다운로드:</strong>
               <br />
               <a 
                 href={IOS_STORE_URL}

@@ -40,7 +40,7 @@ body {
 }
 
 @theme {
-  --font-sans: Poppins;
+  --font-sans: Paperlogy;
   --breakpoint-3xl: 1920px;
   --notion-max-width: 1280px;
 }
@@ -106,4 +106,14 @@ html {
 ::selection {
   background: rgba(255, 97, 97, 0.3);
   color: inherit;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
