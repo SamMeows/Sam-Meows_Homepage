@@ -16,6 +16,17 @@ export default function Document() {
             `,
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Sam-Meows",
+              "url": "https://sam-meows.com/"
+            }),
+          }}
+        />
       </Head>
       <body className="antialiased">
         <Main />
