@@ -14,7 +14,8 @@ const LineBreakMobileOnly = () => <br className="block sm:hidden" />;
 
 interface ProductButtonProps {
   children: React.ReactNode;
-  onClick: () => void;
+  href: string;
+  label?: string;
   variant: "primary" | "secondary";
   icon?: React.ReactNode;
 }
@@ -52,10 +53,13 @@ function ShortsEmbed({
   );
 }
 
-function ProductButton({ children, onClick, variant, icon }: ProductButtonProps) {
+function ProductButton({ children, href, label, variant, icon }: ProductButtonProps) {
   return (
-    <motion.button
-      onClick={onClick}
+    <motion.a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
       className={`flex justify-center items-center gap-[10px] md:w-[200px] w-[150px] md:h-[58px] h-[46px] rounded-full font-semibold border-[2px] cursor-pointer transition-all duration-300 text-[14px] md:text-[18px] ${
         variant === "primary"
           ? "bg-[#FF6161] text-white border-[#FF9292] hover:shadow-[0_0_20px_#FF616180]"
@@ -66,7 +70,7 @@ function ProductButton({ children, onClick, variant, icon }: ProductButtonProps)
     >
       {icon}
       {children}
-    </motion.button>
+    </motion.a>
   );
 }
 
@@ -176,18 +180,14 @@ export default function ProductSection() {
         >
           <ProductButton
             variant="primary"
-            onClick={() => window.open("https://ritty.me", "_blank")}
+            href="https://ritty.sam-meows.com/"
+            label="리티 (Ritty) 공식 홈페이지"
           >
             공식 홈페이지 &gt;
           </ProductButton>
           <ProductButton
             variant="secondary"
-            onClick={() =>
-              window.open(
-                "https://play.google.com/store/apps/details?id=com.sammeows.ritty",
-                "_blank"
-              )
-            }
+            href="https://play.google.com/store/apps/details?id=com.sammeows.ritty"
             icon={
               <Image
                 src={RittyMiniIcon}
@@ -201,9 +201,7 @@ export default function ProductSection() {
           </ProductButton>
           <ProductButton
             variant="secondary"
-            onClick={() =>
-              window.open("https://apps.apple.com/us/app/id6743311040", "_blank")
-            }
+            href="https://apps.apple.com/us/app/id6743311040"
             icon={
               <Image
                 src={RittyMiniIcon}
