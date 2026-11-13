@@ -3,7 +3,7 @@ export interface ProductVideo {
   title: string;
 }
 
-export const RITTY_YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@Ritty_kr";
+export const RITTY_YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@ritty_cat";
 
 export const PRODUCT_VIDEOS: ProductVideo[] = [
   {
