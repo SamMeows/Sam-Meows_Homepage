@@ -37,7 +37,7 @@ export default function Document() {
                 "sameAs": [
                   "https://www.linkedin.com/company/104854511/",
                   "https://www.instagram.com/ritty_makers/",
-                  "https://www.youtube.com/@Ritty_kr",
+                  "https://www.youtube.com/@ritty_cat",
                   "https://discord.com/invite/wghaFYCkCV"
                 ],
                 "founder": [
